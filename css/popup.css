@@ -1,0 +1,108 @@
+.overlay {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity .5s ease;
+  visibility: hidden;
+  opacity: 0;
+  z-index:9999;
+}
+
+.overlay.active {
+  visibility: visible;
+  /*overflow-y: scroll;*/
+  opacity: 1;
+}
+
+.popup {
+  margin: auto;
+  margin-top: 10vh;
+  padding: 30px;
+  background: #FFECD1;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+  transition: all 2s ease-in-out;
+  font-size: .9rem;
+  font-weight: 300;
+}
+#s3 .popup h2,
+#s3 .popup h3,
+#s3 .popup h4,
+#s3 .popup h5  {
+  margin-bottom: .35em;
+  line-height: 1.3;
+  
+}
+#s3 .popup h2{
+  margin-bottom: .20em;
+  line-height: 1.3;
+  
+}
+
+#s3 .popup p,
+#s3 .popup li {
+  margin-bottom: .5em;
+}
+
+#s3 .popup p span {
+  border-radius: 6px;
+  background-color: #a98;
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+#s3 .popup ol {
+  text-indent: -12px;
+  padding-left: 12px;
+  list-style-position: inside;
+}
+
+.popup .close {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup.content h5
+   color: #FFECD1;
+   font-size: 2rem;
+
+
+.popup .content {
+  /*max-height: 60%;*/
+  /*overflow: auto;*/
+}
+
+/*.popup h2 {
+  color: #000;*/
+}
+.popup .content h1 {
+  color: #fff;
+   font-family: 'Source Sans Pro', sans-serif;
+   color: #FFECD1;
+   font-size: 16px;
+   overflow-x: hidden;
+
+}
+
+@media screen and (max-width: 680px) {
+  .popup {
+    width: 85%;
+  }
+}

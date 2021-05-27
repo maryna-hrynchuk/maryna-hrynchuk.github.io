@@ -1,0 +1,55 @@
+/* Нормалізація */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* END of Нормалізація */
+
+html, 
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   color: #210;
+   font-size: 16px;
+   overflow-x: hidden;
+}
+
+h1 {
+   font-family: 'Montserrat', sans-serif;
+   color: #231f20;
+}
+
+h2, h3, h4, h5, h6 {
+   font-family: 'Montserrat', sans-serif;
+}
+
+/* Ієрархія заголовків 1,2,3 рівнів  */
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 2rem; }
+h5 { font-size:1rem; }
+
+header, section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+nav, header, section {
+    padding: 30px; /* Мінімальні внутрішні відступи для smartphone */
+}
+
+.container-fluid,
+.container {
+    margin: 0 auto; /* Центрування по-горизонталі */
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px; /* Обмеження ширини контенту всередині секцій */
+}

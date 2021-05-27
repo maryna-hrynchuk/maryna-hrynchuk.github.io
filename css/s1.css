@@ -1,0 +1,81 @@
+#s1 {
+    background-color: #a98;
+    color:#110;
+    height: 100vh;
+    position: relative;
+}
+
+#s1 .bg-section {
+    background-image: url("../img/febiyan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width: 60%;
+    z-index:0;
+}
+
+.inner {
+    height:100%;
+    z-index:1;
+}
+
+.about {
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.title {
+    width:100%;
+    text-transform: lowercase;
+    font-size:1.5rem;
+    color: #edc;
+    font-weight: 500;
+    letter-spacing: .01em;
+    opacity: .8;
+}
+
+.about .txt-box h2 {
+    color:#fff;
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-bottom: .25em;
+}
+
+.about .txt-box p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .005em;
+    max-width: 35%;
+}
+
+@media screen and (max-aspect-ratio:1/1) {
+
+    #s1 .bg-section {
+        height:50%;
+        width: 100%;
+    }
+
+    .about .txt-box {
+        align-self: flex-end;
+        margin-bottom: 35px;
+    }
+    .about .txt-box p {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-aspect-ratio:1/1) and (max-width:766px) {
+
+    .about .txt-box h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: .5em;
+    }   
+}
